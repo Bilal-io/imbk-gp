@@ -1,13 +1,63 @@
 html,
 body {
+  font-family: "Roboto Mono", monospace;
+  background-color: #222;
+  color: #fff;
   width: 100%;
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
-body,
-button {
-  background: #fff;
-  color: #000;
-  font-family: "Roboto Mono", monospace;
+body {
+  padding: 96px 32px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #2196f3;
+}
+
+a:hover {
+  color: #9745f5;
+}
+
+a:focus, a:visited {
+  text-decoration: underline dotted #9745f5;
+  color: #9745f5;
+}
+
+.header, .content {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 680px;
+}
+
+.header h1 {
+  margin-bottom: 16px;
+}
+
+.content h2 {
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  margin-top: 48px;
+  font-size: 18px;
+}
+
+.content .bio {
+  line-height: 22px;
+}
+
+.content .skills {
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 16px;
+}
+
+.content .skills .skill {
+  background-color: #ddd;
+  border-radius: 2px;
+  padding: 4px 8px;
+  color: #222;
 }
